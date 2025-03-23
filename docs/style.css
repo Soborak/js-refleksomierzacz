@@ -80,7 +80,7 @@ button:hover:not(:disabled) {
 
 label {
     font-size: 16px;
-    margin-right: 10px;
+    margin: 0;
 }
 
 input, select {
@@ -88,6 +88,14 @@ input, select {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+#game-mode-container {
+    display: flex; /* Ustawienie elementów w jednej linii */
+    align-items: center; /* Wyśrodkowanie w pionie */
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    gap: 10px; /* Odstęp między etykietą a opcją wyboru */
+    margin-top: 10px; /* Odstęp od poprzednich elementów */
 }
 
 #stats {
