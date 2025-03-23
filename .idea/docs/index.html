@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refleksomierzacz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game-container">
+    <h1>Refleksomierzacz</h1>
+    <div id="click-area">Kliknij tutaj!</div>
+    <div id="controls">
+        <button id="start-button">Start</button>
+        <button id="stop-button" disabled>Stop</button>
+        <label for="attempts">Liczba prób:</label>
+        <input type="number" id="attempts" value="5" min="1">
+        <label for="game-mode">Tryb gry:</label>
+        <select id="game-mode">
+            <option value="mouse">Klikanie myszą</option>
+            <option value="keyboard">Wciskanie klawisza</option>
+        </select>
+    </div>
+    <div id="stats" style="display: none;">
+        <h2>Statystyki</h2>
+        <p>Najkrótszy czas reakcji: <span id="shortest-time">-</span> ms</p>
+        <p>Najdłuższy czas reakcji: <span id="longest-time">-</span> ms</p>
+        <p>Średni czas reakcji: <span id="average-time">-</span> ms</p>
+        <p>Najlepszy wynik: <span id="best-time">-</span> ms</p>
+        <p>Kliknięcia przed zmianą koloru: <span id="wrong-clicks">0</span></p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

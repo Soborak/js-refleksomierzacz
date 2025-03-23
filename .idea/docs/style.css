@@ -1,0 +1,110 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+#game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#click-area {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#click-area.active {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#controls {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#start-button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#stop-button {
+    background-color: #f44336;
+    color: #fff;
+}
+
+button:hover:not(:disabled) {
+    background-color: #333;
+    color: #fff;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input, select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#stats {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#stats h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#stats p {
+    font-size: 16px;
+    margin: 5px 0;
+}
